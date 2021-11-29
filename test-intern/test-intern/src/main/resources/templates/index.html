@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Intern</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NIP</th>
+                <th>Nama Lengkap</th>
+                <th>Tanggal Lahir</th>
+                <th>Tempat Lahir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="data : ${datas}">
+                <td th:text="${data.nip}"></td>
+                <td th:text="${data.nama_lengkap}"></td>
+                <td th:text="${data.tanggal_lahir}"></td>
+                <td th:text="${data.tempat_lahir}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
